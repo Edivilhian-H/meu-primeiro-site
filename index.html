@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <img src="./giphy.gif">
+    <h1>MEU DOLAR </h1>
+    <h2>prmeiro projento</h2>
+
+    <div>
+
+        <input id="ip-real" type="number" placeholder="Valor em Reais">
+        <input id="ip-dolar" type="number" placeholder="Valor do Dólar">
+
+        <p id="dolares">$</p>
+
+
+        <button onclick="calcular()">Converter</button>
+    </div>
+</body>
+
+<style>
+    body {
+        background-color: #b0e61e;
+        text-align: center;
+    }
+
+    img {
+        width: 40%;
+    }
+
+    h1 {
+        color: #677da7;
+        font-size: 40px;
+    }
+
+    h2 {
+        color: red;
+        font-size: 12px;
+        text-align: right;
+
+    }
+    p{
+        font-size: 25px;
+    }
+
+    input {
+        width: 140px;
+        height: 30px;
+    }
+
+    #ip-real {
+        border: 2px solid #6e8604;
+        border-radius: 5px;
+    }
+
+    #ip-dolar {
+        border: 2px solid red;
+        border-radius: 5px;
+        t
+    }
+
+    button { 
+        height: 40px;
+        width: 150px;
+        font-size: 20px;
+        cursor: pointer;
+        border: 3px solid #B0e61e;
+        border-radius: 10px;
+        background-color: red;
+        color: white; 
+    }
+
+    button:hover {
+        color: #323232;
+        background-color: #6e8604;
+        padding: 10px 32px;
+
+    }
+</style>
+
+<script>
+
+    function calcular() {
+        let real = document.getElementById("ip-real").value
+        let dolar = document.getElementById("ip-dolar").value
+
+        let resultado = real / dolar
+
+        dolares.innerHTML = " $ " + resultado
+
+        alert('O resultado é $' + resultado + ' dólares')
+    }
+
+
+</script>
+
+
+</html>
