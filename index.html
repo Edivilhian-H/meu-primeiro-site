@@ -12,14 +12,12 @@
 
     <img src="./giphy.gif">
     <h1>MEU DOLAR </h1>
-    <h2>prmeiro projento</h2>
-
     <div>
 
         <input id="ip-real" type="number" placeholder="Valor em Reais">
         <input id="ip-dolar" type="number" placeholder="Valor do Dólar">
-
-        <p id="dolares">$</p>
+        <span id="p"></span>
+        <p id="dolares">$ 0</p>
 
 
         <button onclick="calcular()">Converter</button>
@@ -47,7 +45,8 @@
         text-align: right;
 
     }
-    p{
+
+    p {
         font-size: 25px;
     }
 
@@ -67,7 +66,7 @@
         t
     }
 
-    button { 
+    button {
         height: 40px;
         width: 150px;
         font-size: 20px;
@@ -75,7 +74,7 @@
         border: 3px solid #B0e61e;
         border-radius: 10px;
         background-color: red;
-        color: white; 
+        color: white;
     }
 
     button:hover {
@@ -96,7 +95,7 @@
 
         dolares.innerHTML = " $ " + resultado
 
-        alert('O resultado é $' + resultado + ' dólares')
+       
     }
 
 
